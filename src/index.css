@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --transition-speed: 0.5s;
+}
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  transition: background-color var(--transition-speed) ease;
+  font-family: Arial, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  font-family: Arial, sans-serif;
+}
+p, li, blockquote {
+  line-height: 1.5;
+  font-family: Arial, sans-serif;
+}
+.mood-transition {
+  transition: all var(--transition-speed) ease;
+}
+.quote-card {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+.reflection-container {
+  transition: height 0.3s ease, opacity 0.3s ease;
+}
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.4);
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
