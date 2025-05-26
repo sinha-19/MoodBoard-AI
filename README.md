@@ -81,14 +81,10 @@ MoodBoard-AI/
 
 - **Font:** The application uses Arial for a simple, accessible look.
 - **Media Links:** Each mood is mapped to a working, mood-appropriate YouTube video embedded directly in the app.
-- **Attribution:** The footer credits Saket as the creator.
-
----
-
-## License
-
-This project is released under the MIT License.
 
 ---
 
 **Made with ❤️ by Saket**
+
+[Live Deployment](https://moodai-sks.netlify.app/)
+```
