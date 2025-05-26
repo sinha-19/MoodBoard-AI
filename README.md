@@ -86,5 +86,4 @@ MoodBoard-AI/
 
 **Made with ❤️ by Saket**
 
-[Live Deployment](https://moodai-sks.netlify.app/)
-```
+Deployment : https://moodai-sks.netlify.app/)
