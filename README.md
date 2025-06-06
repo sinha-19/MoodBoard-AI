@@ -4,6 +4,30 @@ MoodBoard AI is a personalized mood companion web application designed to help u
 
 ---
 
+## 🗺️ Workflow Diagram
+
+```mermaid
+flowchart TD
+    Start([User Opens App])
+    Start --> LoadLocal[Load Previous Mood & Reflection from LocalStorage]
+    LoadLocal --> Home[Show Home Page]
+    Home --> SelectMood{Mood Selected?}
+    SelectMood -- Yes --> MoodApply[Update Theme, Show Mood Content]
+    SelectMood -- No --> WaitMood[Wait for Mood Selection]
+    MoodApply --> SuggestQuote[Display Mood-based Quote]
+    MoodApply --> SuggestMedia[Display Mood-based YouTube Video]
+    MoodApply --> Reflection[Today's Reflection Section]
+    Reflection --> SaveReflection{Save Reflection?}
+    SaveReflection -- Yes --> LocalSave[Save to LocalStorage]
+    LocalSave --> Reflection
+    Reflection --> Done[User Reviews Reflection]
+    Home --> Responsive[Responsive UI for Device]
+    Responsive --> Home
+    Done --> End([User Closes or Leaves App])
+```
+
+---
+
 ## Features
 
 - **Mood Selection:** Choose your current mood from distinct options with easily recognizable icons and color themes.
@@ -86,4 +110,4 @@ MoodBoard-AI/
 
 **Made with ❤️ by Saket**
 
-Deployment : https://moodai-sks.netlify.app/)
+Deployment: [https://moodai-sks.netlify.app/](https://moodai-sks.netlify.app/)
